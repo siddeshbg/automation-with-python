@@ -1,10 +1,4 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-
-def home():
-  return "Welcome to my website!"
+from simple_flask_webapp.webapp import app
 
 app.run(host='0.0.0.0')
+
